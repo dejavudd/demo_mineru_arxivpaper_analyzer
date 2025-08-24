@@ -121,7 +121,7 @@ output/
 
 ## 💡 使用示例
 
-### 示例1：处理SATA论文
+### 示例1：处理论文
 
 ```bash
 python lrm_paper_analyzer.py https://arxiv.org/abs/论文号
