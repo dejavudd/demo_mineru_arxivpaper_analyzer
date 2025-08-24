@@ -1,0 +1,38 @@
+# ArXiv PDF Downloader and Image Extractor - 依赖包
+# 
+# 核心功能依赖：
+# - requests: HTTP请求库，用于下载PDF文件
+# - mineru[core]: PDF解析和图片提取工具（1200 DPI极致质量）
+# - Pillow + OpenCV + NumPy: AI多层级图片增强系统
+
+# ======================== 核心依赖 ========================
+
+# HTTP请求库 - 用于下载PDF文件
+requests>=2.28.0
+
+# MinerU工具 - 用于PDF解析和图片提取
+# [core]包含核心PDF处理功能，支持1200 DPI极致质量提取
+mineru[core]>=0.7.0
+
+# ==================== AI图片增强系统 ====================
+
+# PIL图片处理库 - 锐化、对比度、色彩、降噪处理
+Pillow>=9.0.0
+
+# OpenCV计算机视觉库 - AI超分辨率、高质量上采样、锐化滤波
+opencv-python>=4.5.0
+
+# NumPy数值计算库 - 支持OpenCV图片处理
+numpy>=1.21.0
+
+# ==================== 可选增强工具 ====================
+# 以下为可选的高级AI图片增强工具，需要额外安装：
+#
+# Real-ESRGAN (实时超分辨率)：
+# pip install realesrgan
+#
+# ESRGAN (增强超分辨率)：
+# 需要从官方仓库下载预训练模型
+#
+# EDSR (深度学习超分辨率)：
+# pip install tensorflow opencv-contrib-python
